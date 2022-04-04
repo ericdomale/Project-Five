@@ -1,0 +1,99 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Flaunters", sans-serif;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Flaunters";
+    src: url('Flaunters.otf'); 
+    src: local('Flaunters'), local('Flaunters'),
+        url('Flaunters.eot?#iefix') format('embedded-opentype');     
+}
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, #d0fae2, #609175, #8fff8f);
+    
+}
+
+.container{
+    background-color: white;
+    width: 70%;
+    min-width: 420px;
+    padding: 35px 50px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.30) ;
+}
+
+h1, h3{
+    font-size:30px;
+    text-align: center;
+    color: #1c093c;
+}
+
+p{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: #606061;
+    font-size: 15px;
+}
+
+form{
+    width: 100%;
+    position: relative;
+    margin:30px auto 0 auto;
+}
+
+.row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+}
+
+label{
+    color: #1c093c;
+    font-size: 20px;
+}
+
+input, select{
+    width: 100%;
+    font-weight: 400;
+    padding:8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid #c4cae0;
+    margin-top: 5px;
+}
+
+input:focus{
+    outline: none;
+    border-color: seagreen;
+}
+
+button{
+    border: none;
+    padding: 10px 20px;
+    background: linear-gradient(130deg, #1f7243, #3aff3a );
+    color: white;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.records{
+    text-decoration: none;
+    background: linear-gradient(130deg, #1f3c72, #3a6eff );
+}

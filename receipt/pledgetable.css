@@ -1,0 +1,104 @@
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('CircularStd-Medium.eot');
+    src: local('Circular Std Medium'), local('CircularStd-Medium'),
+        url('CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('CircularStd-Medium.woff2') format('woff2'),
+        url('CircularStd-Medium.woff') format('woff'),
+        url('CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+*{
+    font-family: 'Circular Std', sans-serif !important;
+}
+
+
+body{
+    margin-top: 5px;
+    margin: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+    background: #90f0ba !important;
+   
+    
+}
+.container{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.50);
+}
+.contentable{
+    border-collapse: collapse;
+    margin: 100px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.30);*/
+    
+}
+
+
+.contentable thead tr{
+    background-color: #589e77;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.contentable th,
+.contentable td{
+   padding: 12px 15px;
+   
+}
+.contentable tbody tr{
+    border-bottom: 1px solid #c5fcdd !important;
+}
+
+.contentable tbody tr:nth-of-type(even){
+    background-color: #e2ffef!important;
+}
+
+.contentable tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;
+}
+
+.contentable tbody tr.active-row{
+    font-weight: bold;
+    color: #009879;
+}
+
+
+.row{
+    width: 100%;
+    padding: 12px 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+}
+
+label{
+    color: #1c093c;
+    font-size: 23px;
+    margin-left: 30px !important; 
+}
+
+
+img{
+    width: 30px;
+    margin-right: 5px;
+}
+
+.column{
+    margin-right: 5px;
+    padding-top: 10px;
+    background: #ded2fa;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.50);
+}
